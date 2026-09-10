@@ -1,0 +1,7 @@
+{% extends "_base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">Добро пожаловать в Comabooks, {{ request.user.username }}!</h2>
+    <p class="text-center">Вы успешно вошли. Начните создавать книгу прямо сейчас.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Добавить страницу в книгу: {{ book.title }}</h2>
+
+    <div class="mb-4">
+        <h4>Существующие страницы:</h4>
+        <ul class="list-group">
+            {% for page in pages %}
+            <li class="list-group-item">
+                <strong>В: {{ page.quiz }}</strong><br>
+                О: {{ page.answer|truncatechars:50 }}
+            </li>
+            {% empty %}
+            <li class="list-group-item">Нет страниц</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-primary">Сохранить страницу</button>
+        <a href="{% url 'dashboard' %}" class="btn btn-success">Завершить и вернуться</a>
+    </form>
+</div>
+{% endblock %}

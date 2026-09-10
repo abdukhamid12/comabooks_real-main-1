@@ -1,0 +1,5 @@
+{% extends "_base.html" %}
+{% block title %}Вход — Comabooks{% endblock %}
+{% block content %}
+<div class="container auth-layout"><div class="auth-intro"><p class="eyebrow">С возвращением</p><h1>Ваша история<br><em>продолжается.</em></h1><p>Здесь вас ждут ваши книги, воспоминания<br>и ещё не написанные страницы.</p><span class="auth-flower" aria-hidden="true">✳</span></div><section class="auth-card"><p class="eyebrow">Личный кабинет</p><h2>Рады вас видеть</h2><p class="text-muted mb-4">Войдите, чтобы вернуться к своим книгам.</p><form method="post">{% csrf_token %}{{ form.non_field_errors }}<div class="mb-4">{{ form.username.label_tag }}{{ form.username }}{{ form.username.errors }}</div><div class="mb-4">{{ form.password.label_tag }}{{ form.password }}{{ form.password.errors }}</div><button type="submit" class="btn btn-primary w-100">Войти ↗</button></form><p class="auth-help">Данные для входа выдаёт администратор.<br>Нужна помощь? <a href="https://t.me/abdukhamid_ikramov" target="_blank" rel="noopener noreferrer">Напишите в Telegram ↗</a></p><a class="text-link" href="{% url 'home' %}">← На главную</a></section></div>
+{% endblock %}

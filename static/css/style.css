@@ -1,0 +1,20 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.auth-card {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+.form-control {
+    border-radius: 8px;
+}

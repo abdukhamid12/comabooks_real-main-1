@@ -1,0 +1,33 @@
+
+@font-face{font-family:BookLora;src:url('../fonts/Lora-Regular.ttf') format('truetype');font-display:swap}
+.cover-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.cover-choice{background:#3b2530;color:#f2dade;border:2px solid transparent;border-radius:12px;padding:8px;cursor:pointer;min-width:0}
+.cover-choice:hover{background:#54313f}.cover-choice[aria-pressed=true]{border-color:#f0c7cf;background:#603c4a}
+.cover-choice img{display:block;width:100%;aspect-ratio:148/210;object-fit:contain;border-radius:2px}
+.cover-choice span{display:block;font-size:10px;line-height:1.4;margin-top:8px;min-height:28px}
+.book-cover-preview,.library-book{--cover-ink:#594438;background-image:url('../covers/classic.svg')!important;background-size:100% 100%!important;background-color:#f5ecdf;color:var(--cover-ink)!important}
+.cover-preview-panel .book-cover-preview{width:100%;max-width:330px;aspect-ratio:148/210;position:relative;margin:auto;border:0;border-radius:2px;padding:0;overflow:hidden}
+.cover-content{position:absolute;inset:0;text-align:center;font-family:BookLora,Georgia,serif}
+.cover-content>*{position:absolute;left:22%;width:56%;margin:0!important;color:var(--cover-ink);overflow-wrap:anywhere;display:flex;align-items:center;justify-content:center;line-height:1.22}
+.cover-content .preview-imprint{top:11%;height:4%;font:7px Arial;letter-spacing:1px}
+.cover-preview-panel .cover-content h1{top:27%;height:27%;font-family:BookLora,Georgia,serif;font-weight:400;font-size:25px;letter-spacing:-.02em;text-transform:none}
+.cover-content #preview-subtitle{top:57%;height:13%;font-size:11px}
+.cover-content #preview-author{top:77.5%;height:8.5%;font-size:11px}
+.cover-content #preview-dedication{top:87%;height:5.5%;font:8px Arial}
+.library-book{position:relative;border-left:0;padding:0;aspect-ratio:148/210}
+.library-book .mini-flower{display:none}.library-book .mini-imprint{position:absolute;top:11%;left:22%;width:56%;font-size:4px}
+.library-book h3{position:absolute;top:27%;left:22%;width:56%;height:30%;display:flex;align-items:center;justify-content:center;font:15px BookLora,Georgia,serif}
+.library-book p{position:absolute;top:78%;left:22%;width:56%;font-size:7px}
+.editor-page .book-page-preview{background:#fff!important;color:#332c28!important;aspect-ratio:148/210;border:0!important;padding:35px 32px!important}
+.editor-page .book-page-preview .question-text{font-family:BookLora,Georgia,serif;color:#332c28!important;font-size:20px}
+.editor-page .book-page-preview .answer-text{font-family:BookLora,Georgia,serif;color:#332c28!important;font-size:14px;line-height:1.6}
+@media(max-width:767px){.cover-gallery{gap:7px}.cover-choice{padding:5px}.cover-choice span{font-size:9px}.cover-preview-panel .book-cover-preview{max-width:300px}.cover-preview-panel .cover-content h1{font-size:24px}}
+.book-cover-preview.classic,.library-book.classic{--cover-ink:#594438;background-image:url('../covers/classic.svg')!important}
+.book-cover-preview.dark,.library-book.dark{--cover-ink:#eed9a6;background-image:url('../covers/dark.svg')!important}
+.book-cover-preview.modern,.library-book.modern{--cover-ink:#343331;background-image:url('../covers/modern.svg')!important}
+.book-cover-preview.rose,.library-book.rose{--cover-ink:#fae5d8;background-image:url('../covers/rose.svg')!important}
+.book-cover-preview.sage,.library-book.sage{--cover-ink:#f5ead8;background-image:url('../covers/sage.svg')!important}
+.book-cover-preview.wine,.library-book.wine{--cover-ink:#f8e5ce;background-image:url('../covers/wine.svg')!important}
+.book-cover-preview.forest,.library-book.forest{--cover-ink:#f3e7c8;background-image:url('../covers/forest.svg')!important}
+.book-cover-preview.amber,.library-book.amber{--cover-ink:#f9e9c7;background-image:url('../covers/amber.svg')!important}
+.book-cover-preview.amber,.library-book.amber{--cover-ink:#f9e9c7;background-image:url('../covers/amber.svg')!important}@media(max-width:767px){.cover-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.cover-choice span{font-size:10px}}

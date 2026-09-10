@@ -1,0 +1,42 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block content %}
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-success">{{ message }}</div>
+  {% endfor %}
+{% endif %}
+<link rel="stylesheet" href="{% static 'css/cover_preview.css' %}">
+<h2>Создание обложки</h2>
+
+<div class="cover-container">
+    <form id="cover-form" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="cover-form-container">
+            <!-- Левая часть: форма -->
+            <div class="form-fields">
+                {{ form.title.label_tag }} {{ form.title }}
+                {{ form.author_book.label_tag }} {{ form.author_book }}
+                {{ form.dedication.label_tag }} {{ form.dedication }}
+                {{ form.template.label_tag }} {{ form.template }}
+                <button type="submit" class="save-btn">Сохранить обложку</button>
+            </div>
+
+            <!-- Правая часть: превью обложки -->
+            <div id="cover-preview" class="book-preview">
+                <div class="book-content">
+                    <h2 id="preview-title">Название книги</h2>
+                    <h4 id="preview-author">Автор</h4>
+                    <p id="preview-dedication">Посвящение</p>
+                </div>
+            </div>
+
+            <input type="hidden" name="cover_image" id="cover-image-data">
+        </div>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="{% static 'js/live_cover_preview.js' %}"></script>
+{% endblock %}

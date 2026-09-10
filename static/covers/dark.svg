@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="420" height="595" preserveAspectRatio="xMinYMin meet" viewBox="0 0 420 595" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="420" height="595"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-595)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="420" height="595" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,13%,15%); fill-rule: evenodd;"/>
+			<rect x="19" y="19" width="382" height="557" style="stroke: rgb(66%,57%,39%); stroke-linecap: butt; stroke-width: 0.75; fill: none; fill-rule: evenodd;"/>
+			<rect x="24" y="24" width="372" height="547" style="stroke: rgb(66%,57%,39%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<circle cx="25" cy="25" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,57%,39%); fill-rule: evenodd;"/>
+			<circle cx="25" cy="570" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,57%,39%); fill-rule: evenodd;"/>
+			<circle cx="395" cy="25" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,57%,39%); fill-rule: evenodd;"/>
+			<circle cx="395" cy="570" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,57%,39%); fill-rule: evenodd;"/>
+			<path d="M 184,145 L 236,145 Z" style="stroke: rgb(66%,57%,39%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 198,475 L 222,475 Z" style="stroke: rgb(66%,57%,39%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 199.607695,469 L 220.392305,481 Z" style="stroke: rgb(66%,57%,39%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 204,464.607695 L 216,485.392305 Z" style="stroke: rgb(66%,57%,39%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 210,463 L 210,487 Z" style="stroke: rgb(66%,57%,39%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 216,464.607695 L 204,485.392305 Z" style="stroke: rgb(66%,57%,39%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 220.392305,469 L 199.607695,481 Z" style="stroke: rgb(66%,57%,39%); stroke-linecap: butt; stroke-width: 0.8;"/>
+		</g>
+	</g>
+</svg>

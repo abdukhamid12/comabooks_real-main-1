@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="420" height="595" preserveAspectRatio="xMinYMin meet" viewBox="0 0 420 595" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="420" height="595"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-595)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="420" height="595" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(21%,9%,13%); fill-rule: evenodd;"/>
+			<g transform=" matrix(1,0,0,1,49.646071,35)">
+				<g transform=" matrix(0.939693,-0.34202,0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,37.37254,109)">
+				<g transform=" matrix(0.939693,-0.34202,0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,42.657027,183)">
+				<g transform=" matrix(0.939693,-0.34202,0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,21.986253,257)">
+				<g transform=" matrix(0.939693,-0.34202,0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,54.444276,331)">
+				<g transform=" matrix(0.939693,-0.34202,0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,48.678487,405)">
+				<g transform=" matrix(0.939693,-0.34202,0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,32.565754,479)">
+				<g transform=" matrix(0.939693,-0.34202,0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,47.42781,553)">
+				<g transform=" matrix(0.939693,-0.34202,0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,390.905744,35)">
+				<g transform=" matrix(0.939693,0.34202,-0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,390.114552,109)">
+				<g transform=" matrix(0.939693,0.34202,-0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,386.90161,183)">
+				<g transform=" matrix(0.939693,0.34202,-0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,390.339342,257)">
+				<g transform=" matrix(0.939693,0.34202,-0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,380.981351,331)">
+				<g transform=" matrix(0.939693,0.34202,-0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,389.815094,405)">
+				<g transform=" matrix(0.939693,0.34202,-0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,391.3107,479)">
+				<g transform=" matrix(0.939693,0.34202,-0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,394.307345,553)">
+				<g transform=" matrix(0.939693,0.34202,-0.34202,0.939693,0,0)">
+					<path d="M 0,0 L 17,59 Z" style="stroke: rgb(32%,39%,30%); stroke-linecap: butt; stroke-width: 0.8;"/>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-4.242641,9.899495)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,20.146426,13.119509)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.707107,0.707107,-0.707107,0.707107,-18.384776,32.526912)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,39%,30%); fill-rule: evenodd;"/>
+					</g>
+					<g transform=" matrix(0.766044,-0.642788,0.642788,0.766044,41.455171,29.179939)">
+						<ellipse cx="0.0" cy="0.0" rx="5.0" ry="15.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,50%,37%); fill-rule: evenodd;"/>
+					</g>
+				</g>
+			</g>
+			<g transform=" matrix(1,0,0,1,37,60)">
+				<ellipse cx="10.399999999999999" cy="0.0" rx="15.079999999999998" ry="9.88" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="6.484293939330829" cy="8.13104741766751" rx="15.079999999999998" ry="9.880000000000003" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.31421771314567" cy="10.139250286690967" rx="15.079999999999998" ry="9.880000000000003" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-9.370076226185159" cy="4.512390886822606" rx="15.079999999999998" ry="9.88" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-9.370076226185162" cy="-4.512390886822603" rx="15.079999999999998" ry="9.88" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.3142177131456725" cy="-10.139250286690967" rx="15.079999999999998" ry="9.880000000000003" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="6.4842939393308265" cy="-8.131047417667512" rx="15.079999999999998" ry="9.88" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="7.184275753222504" cy="3.0374630700074743" rx="11.309999999999999" ry="7.41" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="2.1045384109093668" cy="7.510720210273252" rx="11.309999999999999" ry="7.41" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.559959279578553" cy="6.328251841431838" rx="11.309999999999999" ry="7.41" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-7.790714626326018" cy="0.38048076317975266" rx="11.309999999999999" ry="7.41" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-5.15490295783334" cy="-5.853800090139831" rx="11.309999999999999" ry="7.41" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="1.3626557787650047" cy="-7.680050079823591" rx="11.309999999999999" ry="7.41" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="6.854106920841041" cy="-3.72306571492889" rx="11.309999999999999" ry="7.41" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="3.62287488860526" cy="3.730251672677519" rx="7.539999999999999" ry="4.94" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-0.657602648772837" cy="5.158251521235364" rx="7.539999999999999" ry="4.940000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.44289197897557" cy="2.701982765147579" rx="7.539999999999999" ry="4.94" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.882593030529632" cy="-1.788934123500211" rx="7.539999999999999" ry="4.94" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-1.645601943347938" cy="-4.932747129546526" rx="7.539999999999999" ry="4.94" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="2.8305609713369257" cy="-4.36210093734019" rx="7.539999999999999" ry="4.94" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="5.175253741683786" cy="-0.5067037686735354" rx="7.539999999999999" ry="4.94" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<circle cx="0" cy="0" r="3" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(90%,76%,67%); fill-rule: evenodd;"/>
+			</g>
+			<g transform=" matrix(1,0,0,1,373,92)">
+				<ellipse cx="12.8" cy="0.0" rx="18.56" ry="12.16" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="7.980669463791791" cy="10.00744297559078" rx="18.56" ry="12.16" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.848267954640824" cy="12.479077275927342" rx="18.56" ry="12.16" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-11.532401509150965" cy="5.553711860704745" rx="18.56" ry="12.16" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-11.532401509150965" cy="-5.553711860704742" rx="18.56" ry="12.16" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.8482679546408276" cy="-12.479077275927342" rx="18.56" ry="12.16" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="7.980669463791788" cy="-10.007442975590784" rx="18.56" ry="12.16" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="8.842185542427696" cy="3.7384160861630455" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="2.5902011211192217" cy="9.243963335720924" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-5.612257574865911" cy="7.788617650993032" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-9.588571847785868" cy="0.46828401622123295" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-6.344495948102573" cy="-7.204677034018253" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="1.6771148046338524" cy="-9.45236932901365" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="8.435823902573585" cy="-4.582234726066327" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="4.458922939821859" cy="4.5910789817569455" rx="9.28" ry="6.08" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-0.8093571061819542" cy="6.348617256905063" rx="9.28" ry="6.08" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-5.468174743354547" cy="3.325517249412405" rx="9.28" ry="6.08" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-6.009345268344163" cy="-2.2017650750771818" rx="9.28" ry="6.08" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.025356237966694" cy="-6.07107339021111" rx="9.28" ry="6.08" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="3.483767349337755" cy="-5.368739615187925" rx="9.28" ry="6.08" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="6.369543066687738" cy="-0.623635407598198" rx="9.28" ry="6.08" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<circle cx="0" cy="0" r="3" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(90%,76%,67%); fill-rule: evenodd;"/>
+			</g>
+			<g transform=" matrix(1,0,0,1,54,491)">
+				<ellipse cx="10.0" cy="0.0" rx="14.5" ry="9.5" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="6.2348980185873355" cy="7.8183148246803" rx="14.499999999999998" ry="9.5" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.2252093395631443" cy="9.749279121818237" rx="14.5" ry="9.5" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-9.009688679024192" cy="4.338837391175582" rx="14.499999999999998" ry="9.5" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-9.009688679024192" cy="-4.338837391175581" rx="14.499999999999998" ry="9.5" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.225209339563145" cy="-9.749279121818237" rx="14.499999999999998" ry="9.5" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="6.234898018587333" cy="-7.8183148246803" rx="14.499999999999996" ry="9.5" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="6.907957455021638" cy="2.920637567314879" rx="10.875" ry="7.125" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="2.0235946258743915" cy="7.221846356031971" rx="10.875" ry="7.125" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.384576230363994" cy="6.084857539838307" rx="10.875" ry="7.125" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-7.491071756082711" cy="0.3658468876728387" rx="10.875" ry="7.125" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.956637459455134" cy="-5.6286539328267615" rx="10.875" ry="7.125" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="1.310245941120197" cy="-7.384663538291914" rx="10.875" ry="7.125" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="6.590487423885616" cy="-3.5798708797393175" rx="10.875" ry="7.125" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="3.483533546735827" cy="3.586780454497614" rx="7.249999999999999" ry="4.75" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-0.6323102392046511" cy="4.959857231957081" rx="7.249999999999999" ry="4.75" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.27201151824574" cy="2.5980603511034417" rx="7.249999999999999" ry="4.75" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.694800990893877" cy="-1.720128964904049" rx="7.249999999999999" ry="4.75" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-1.58230956091148" cy="-4.743026086102429" rx="7.25" ry="4.75" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="2.721693241670121" cy="-4.194327824365567" rx="7.25" ry="4.75" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="4.9762055208497955" cy="-0.48721516218609207" rx="7.25" ry="4.75" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<circle cx="0" cy="0" r="3" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(90%,76%,67%); fill-rule: evenodd;"/>
+			</g>
+			<g transform=" matrix(1,0,0,1,369,525)">
+				<ellipse cx="9.600000000000001" cy="0.0" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="5.985502097843842" cy="7.5055822316930865" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.136200965980617" cy="9.359307956945507" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-8.649301131863222" cy="4.16528389552856" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-8.649301131863222" cy="-4.165283895528557" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.1362009659806205" cy="-9.359307956945507" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="5.985502097843842" cy="-7.5055822316930865" rx="13.919999999999998" ry="9.120000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="6.631639156820773" cy="2.8038120646222833" rx="10.44" ry="6.84" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="1.9426508408394163" cy="6.932972501790694" rx="10.44" ry="6.84" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.209193181149434" cy="5.841463238244774" rx="10.44" ry="6.84" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-7.191428885839402" cy="0.3512130121659256" rx="10.44" ry="6.84" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.75837196107693" cy="-5.40350777551369" rx="10.44" ry="6.84" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="1.2578361034753893" cy="-7.089276996760237" rx="10.44" ry="6.84" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="6.3268679269301895" cy="-3.4366760445497455" rx="10.44" ry="6.84" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="3.3441922048663937" cy="3.4433092363177096" rx="6.959999999999999" ry="4.5600000000000005" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-0.6070178296364652" cy="4.761462942678799" rx="6.959999999999999" ry="4.5600000000000005" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.101131057515909" cy="2.4941379370593033" rx="6.959999999999999" ry="4.5600000000000005" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-4.50700895125812" cy="-1.6513238063078868" rx="6.959999999999999" ry="4.5600000000000005" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-1.51901717847502" cy="-4.553305042658332" rx="6.959999999999999" ry="4.5600000000000005" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="2.6128255120033166" cy="-4.026554711390945" rx="6.959999999999999" ry="4.5600000000000005" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="4.777157300015803" cy="-0.46772655569864874" rx="6.959999999999999" ry="4.5600000000000005" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<circle cx="0" cy="0" r="3" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(90%,76%,67%); fill-rule: evenodd;"/>
+			</g>
+			<g transform=" matrix(1,0,0,1,330,41)">
+				<ellipse cx="6.800000000000001" cy="0.0" rx="9.86" ry="6.46" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="4.239730652639388" cy="5.316454080782603" rx="9.86" ry="6.46" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-1.5131423509029371" cy="6.6295098028364015" rx="9.86" ry="6.46" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-6.126588301736451" cy="2.9504094259993967" rx="9.86" ry="6.460000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-6.126588301736451" cy="-2.950409425999394" rx="9.86" ry="6.459999999999999" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-1.513142350902939" cy="-6.6295098028364015" rx="9.86" ry="6.46" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="4.239730652639388" cy="-5.316454080782604" rx="9.86" ry="6.459999999999999" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="4.697411069414715" cy="1.9860335457741174" rx="7.395" ry="4.845" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="1.376044345594586" cy="4.910855522101741" rx="7.395" ry="4.844999999999999" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.9815118366475164" cy="4.137703127090048" rx="7.395" ry="4.845" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-5.093928794136243" cy="0.24877588361753045" rx="7.395" ry="4.845" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-3.370513472429492" cy="-3.827484674322196" rx="7.395" ry="4.844999999999999" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="0.8909672399617339" cy="-5.021571206038502" rx="7.395" ry="4.844999999999999" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="4.481531448242219" cy="-2.4343121982227363" rx="7.395" ry="4.845" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="2.3688028117803626" cy="2.439010709058378" rx="4.93" ry="3.2300000000000004" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-0.429970962659163" cy="3.3727029177308157" rx="4.93" ry="3.23" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-2.9049678324071024" cy="1.7666810387503402" rx="4.93" ry="3.2300000000000004" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-3.1924646738078355" cy="-1.1696876961347533" rx="4.93" ry="3.2300000000000004" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-1.075970501419806" cy="-3.2252577385496517" rx="4.93" ry="3.2299999999999995" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="1.850751404335682" cy="-2.8521429205685855" rx="4.93" ry="3.2300000000000004" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="3.3838197541778605" cy="-0.33130631028654234" rx="4.93" ry="3.23" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<circle cx="0" cy="0" r="3" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(90%,76%,67%); fill-rule: evenodd;"/>
+			</g>
+			<g transform=" matrix(1,0,0,1,83,35)">
+				<ellipse cx="7.600000000000001" cy="0.0" rx="11.02" ry="7.22" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="4.738522494126375" cy="5.941919266757027" rx="11.02" ry="7.22" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-1.6911590980679883" cy="7.409452132581859" rx="11.02" ry="7.22" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-6.847363396058384" cy="3.2975164172934432" rx="11.02" ry="7.22" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-6.847363396058387" cy="-3.29751641729344" rx="11.02" ry="7.219999999999999" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="-1.6911590980679918" cy="-7.409452132581859" rx="11.02" ry="7.22" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="4.738522494126375" cy="-5.9419192667570275" rx="11.02" ry="7.220000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(55%,26%,32%); fill-rule: evenodd;"/>
+				<ellipse cx="5.250047665816446" cy="2.2196845511593084" rx="8.264999999999999" ry="5.415" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="1.537931915664538" cy="5.4886032305842996" rx="8.264999999999999" ry="5.414999999999999" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-3.332277935076636" cy="4.6244917302771125" rx="8.264999999999999" ry="5.415000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-5.693214534622859" cy="0.2780436346313575" rx="8.264999999999999" ry="5.415" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="-3.767044469185903" cy="-4.277776988948338" rx="8.264999999999999" ry="5.415000000000001" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="0.9957869152513492" cy="-5.612344289101855" rx="8.264999999999999" ry="5.415" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="5.008770442153068" cy="-2.720701868601881" rx="8.264999999999999" ry="5.415" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(68%,39%,45%); fill-rule: evenodd;"/>
+				<ellipse cx="2.647485495519229" cy="2.7259531454181865" rx="5.51" ry="3.6099999999999994" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-0.4805557817955348" cy="3.769491496287382" rx="5.51" ry="3.61" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-3.246728753866762" cy="1.9745258668386154" rx="5.51" ry="3.61" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-3.568048753079347" cy="-1.307298013327077" rx="5.51" ry="3.61" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="-1.2025552662927241" cy="-3.604699825437846" rx="5.51" ry="3.6099999999999994" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="2.0684868636692917" cy="-3.187689146517831" rx="5.51" ry="3.61" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<ellipse cx="3.781916195845845" cy="-0.3702835232614299" rx="5.51" ry="3.61" style="stroke: rgb(45%,21%,27%); stroke-linecap: butt; stroke-width: 0.3; fill: rgb(82%,60%,60%); fill-rule: evenodd;"/>
+				<circle cx="0" cy="0" r="3" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(90%,76%,67%); fill-rule: evenodd;"/>
+			</g>
+			<rect x="84" y="105" width="252" height="384" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(21%,9%,13%); fill-rule: evenodd;"/>
+			<rect x="19" y="19" width="382" height="557" style="stroke: rgb(76%,56%,52%); stroke-linecap: butt; stroke-width: 0.75; fill: none; fill-rule: evenodd;"/>
+			<rect x="24" y="24" width="372" height="547" style="stroke: rgb(76%,56%,52%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<circle cx="25" cy="25" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,56%,52%); fill-rule: evenodd;"/>
+			<circle cx="25" cy="570" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,56%,52%); fill-rule: evenodd;"/>
+			<circle cx="395" cy="25" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,56%,52%); fill-rule: evenodd;"/>
+			<circle cx="395" cy="570" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,56%,52%); fill-rule: evenodd;"/>
+			<path d="M 184,145 L 236,145 Z" style="stroke: rgb(76%,56%,52%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 198,475 L 222,475 Z" style="stroke: rgb(76%,56%,52%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 199.607695,469 L 220.392305,481 Z" style="stroke: rgb(76%,56%,52%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 204,464.607695 L 216,485.392305 Z" style="stroke: rgb(76%,56%,52%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 210,463 L 210,487 Z" style="stroke: rgb(76%,56%,52%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 216,464.607695 L 204,485.392305 Z" style="stroke: rgb(76%,56%,52%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 220.392305,469 L 199.607695,481 Z" style="stroke: rgb(76%,56%,52%); stroke-linecap: butt; stroke-width: 0.8;"/>
+		</g>
+	</g>
+</svg>

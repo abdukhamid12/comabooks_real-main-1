@@ -1,0 +1,137 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}Создать книгу — Comabooks{% endblock %}
+{% block content %}
+<div class="container create-workspace">
+    <a class="text-link mb-3" href="{% url 'dashboard' %}">← Мои книги</a>
+    <div class="create-heading"><p class="eyebrow">Начало вашей истории</p><h1>Всё начинается <em>с обложки.</em></h1><p class="text-muted">Придумайте название, выберите оформление — и переходите к воспоминаниям.</p></div>
+    <div class="workflow-steps" aria-label="Этапы создания"><strong>01 · Обложка</strong><span>02 · Ваша история</span><span>03 · Готовая книга</span></div>
+    <div class="row">
+        <!-- Form Column -->
+        <div class="col-md-6">
+            <div class="card p-4">
+                <form method="post" id="createBookForm">
+                    {% csrf_token %}
+                    {{ form.non_field_errors }}
+                    <div class="mb-3">
+                        <label for="{{ form.title.id_for_label }}" class="form-label">Название книги</label>
+                        {{ form.title }}
+                        {{ form.title.errors }}
+                    </div>
+                    <div class="mb-3">
+                        <label for="{{ form.author.id_for_label }}" class="form-label">Автор</label>
+                        {{ form.author }}
+                        {{ form.author.errors }}
+                    </div>
+                    <div class="mb-3">
+                        <label for="{{ form.subtitle.id_for_label }}" class="form-label">Подзаголовок</label>
+                        {{ form.subtitle }}
+                        {{ form.subtitle.errors }}
+                    </div>
+                    <div class="mb-3">
+                        <label for="{{ form.dedication.id_for_label }}" class="form-label">Кому посвящается</label>
+                        {{ form.dedication }}
+                        {{ form.dedication.errors }}
+                        <div class="form-text">Мы подберем вопросы специально для выбранного человека.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="{{ form.template.id_for_label }}" class="form-label">Стиль оформления</label>
+                        <div class="cover-gallery" role="group" aria-label="Коллекция обложек">
+                        {% for value, label in form.template.field.choices %}
+                        <button type="button" class="cover-choice" data-cover="{{ value }}" aria-pressed="false">
+                            <img src="{% static 'covers/' %}{{ value }}.svg" alt="" loading="lazy">
+                            <span>{{ label }}</span>
+                        </button>
+                        {% endfor %}
+                        </div>
+                        {{ form.template }}
+                        {{ form.template.errors }}
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 mt-3">Создать и перейти к вопросам</button>
+                    <a href="{% url 'dashboard' %}" class="btn btn-secondary w-100 mt-2">Отмена</a>
+                </form>
+            </div>
+        </div>
+
+        <!-- Preview Column -->
+        <div class="col-md-6">
+            <div class="sticky-top cover-preview-panel" style="top: 2rem; z-index: 1;">
+                <h4 class="text-center mb-3">Ваша будущая обложка</h4>
+                <div id="preview-card" class="book-cover-preview classic" role="img" aria-label="Предпросмотр обложки">
+                    <div class="cover-content">
+                        <span class="preview-imprint">ЛИЧНАЯ ИСТОРИЯ</span>
+                        <h1 id="preview-title">Название книги</h1>
+                        <h3 id="preview-subtitle" class="mt-2"></h3>
+                        <p id="preview-author" class="mt-4">Автор</p>
+                        <p id="preview-dedication"></p>
+                    </div>
+                </div>
+                <p class="preview-caption">Предпросмотр обновляется, пока вы пишете.<br>Итоговое оформление можно проверить в PDF.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const titleInput = document.getElementById('id_title');
+        const authorInput = document.getElementById('id_author');
+        const subtitleInput = document.getElementById('id_subtitle');
+        const templateSelect = document.getElementById('id_template');
+
+        const previewTitle = document.getElementById('preview-title');
+        const previewAuthor = document.getElementById('preview-author');
+        const previewSubtitle = document.getElementById('preview-subtitle');
+        const previewCard = document.getElementById('preview-card');
+
+        function updatePreview() {
+            previewTitle.textContent = titleInput.value || 'Название книги';
+            previewAuthor.textContent = authorInput.value || 'Автор';
+            previewSubtitle.textContent = subtitleInput.value || '';
+
+            // Update Class
+            previewCard.className = 'book-cover-preview ' + templateSelect.value;
+            requestAnimationFrame(fitCoverText);
+        }
+
+        titleInput.addEventListener('input', updatePreview);
+        authorInput.addEventListener('input', updatePreview);
+        subtitleInput.addEventListener('input', updatePreview);
+        templateSelect.addEventListener('change', updatePreview);
+
+        function fitCoverText() {
+            const fields = [[previewTitle,30],[previewSubtitle,12],[previewAuthor,11],[document.getElementById('preview-dedication'),7]];
+            fields.forEach(([field,base]) => {
+                let size = base * previewCard.clientWidth / 420;
+                field.style.fontSize = size + 'px';
+                while (size > 5 && field.scrollHeight > field.clientHeight + 1) {
+                    size -= .5;
+                    field.style.fontSize = size + 'px';
+                }
+            });
+        }
+        new ResizeObserver(fitCoverText).observe(previewCard);
+        document.fonts.ready.then(fitCoverText);
+        const dedication = document.getElementById('id_dedication');
+        const dedicationPreview = document.getElementById('preview-dedication');
+        const choices = document.querySelectorAll('[data-cover]');
+        function updateSelection() {
+            choices.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.cover === templateSelect.value)));
+            dedicationPreview.textContent = dedication.value ? dedication.options[dedication.selectedIndex].text : '';
+            requestAnimationFrame(fitCoverText);
+        }
+        choices.forEach(button => button.addEventListener('click', () => {
+            templateSelect.value = button.dataset.cover;
+            templateSelect.dispatchEvent(new Event('change', {bubbles:true}));
+        }));
+        templateSelect.addEventListener('change', updateSelection);
+        dedication.addEventListener('change', updateSelection);
+        updateSelection();
+        updatePreview();
+    });
+</script>
+{% endblock %}

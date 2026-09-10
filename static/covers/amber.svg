@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="420" height="595" preserveAspectRatio="xMinYMin meet" viewBox="0 0 420 595" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="420" height="595"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-595)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="420" height="595" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(33%,25%,17%); fill-rule: evenodd;"/>
+			<path d="M -20 -60 C 80 30 180 -125 270 -30 C 340 35 400 -100 440 -35 L 440 20 C 300 -45 200 90 90 5 L -20 50 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,21%); fill-rule: evenodd;"/>
+			<path d="M -20 -29 C 80 61 180 -94 270 1 C 340 66 400 -69 440 -4 L 440 51 C 300 -14 200 121 90 36 L -20 81 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(54%,41%,25%); fill-rule: evenodd;"/>
+			<path d="M -20 2 C 80 92 180 -63 270 32 C 340 97 400 -38 440 27 L 440 82 C 300 17 200 152 90 67 L -20 112 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(68%,53%,32%); fill-rule: evenodd;"/>
+			<path d="M -20 33 C 80 123 180 -32 270 63 C 340 128 400 -7 440 58 L 440 113 C 300 48 200 183 90 98 L -20 143 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,65%,45%); fill-rule: evenodd;"/>
+			<path d="M -20 64 C 80 154 180 -1 270 94 C 340 159 400 24 440 89 L 440 144 C 300 79 200 214 90 129 L -20 174 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,21%); fill-rule: evenodd;"/>
+			<path d="M -20 95 C 80 185 180 30 270 125 C 340 190 400 55 440 120 L 440 175 C 300 110 200 245 90 160 L -20 205 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(54%,41%,25%); fill-rule: evenodd;"/>
+			<path d="M -20 126 C 80 216 180 61 270 156 C 340 221 400 86 440 151 L 440 206 C 300 141 200 276 90 191 L -20 236 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(68%,53%,32%); fill-rule: evenodd;"/>
+			<path d="M -20 157 C 80 247 180 92 270 187 C 340 252 400 117 440 182 L 440 237 C 300 172 200 307 90 222 L -20 267 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,65%,45%); fill-rule: evenodd;"/>
+			<path d="M -20 188 C 80 278 180 123 270 218 C 340 283 400 148 440 213 L 440 268 C 300 203 200 338 90 253 L -20 298 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,21%); fill-rule: evenodd;"/>
+			<path d="M -20 219 C 80 309 180 154 270 249 C 340 314 400 179 440 244 L 440 299 C 300 234 200 369 90 284 L -20 329 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(54%,41%,25%); fill-rule: evenodd;"/>
+			<path d="M -20 250 C 80 340 180 185 270 280 C 340 345 400 210 440 275 L 440 330 C 300 265 200 400 90 315 L -20 360 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(68%,53%,32%); fill-rule: evenodd;"/>
+			<path d="M -20 281 C 80 371 180 216 270 311 C 340 376 400 241 440 306 L 440 361 C 300 296 200 431 90 346 L -20 391 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,65%,45%); fill-rule: evenodd;"/>
+			<path d="M -20 312 C 80 402 180 247 270 342 C 340 407 400 272 440 337 L 440 392 C 300 327 200 462 90 377 L -20 422 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,21%); fill-rule: evenodd;"/>
+			<path d="M -20 343 C 80 433 180 278 270 373 C 340 438 400 303 440 368 L 440 423 C 300 358 200 493 90 408 L -20 453 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(54%,41%,25%); fill-rule: evenodd;"/>
+			<path d="M -20 374 C 80 464 180 309 270 404 C 340 469 400 334 440 399 L 440 454 C 300 389 200 524 90 439 L -20 484 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(68%,53%,32%); fill-rule: evenodd;"/>
+			<path d="M -20 405 C 80 495 180 340 270 435 C 340 500 400 365 440 430 L 440 485 C 300 420 200 555 90 470 L -20 515 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,65%,45%); fill-rule: evenodd;"/>
+			<path d="M -20 436 C 80 526 180 371 270 466 C 340 531 400 396 440 461 L 440 516 C 300 451 200 586 90 501 L -20 546 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,21%); fill-rule: evenodd;"/>
+			<path d="M -20 467 C 80 557 180 402 270 497 C 340 562 400 427 440 492 L 440 547 C 300 482 200 617 90 532 L -20 577 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(54%,41%,25%); fill-rule: evenodd;"/>
+			<path d="M -20 498 C 80 588 180 433 270 528 C 340 593 400 458 440 523 L 440 578 C 300 513 200 648 90 563 L -20 608 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(68%,53%,32%); fill-rule: evenodd;"/>
+			<path d="M -20 529 C 80 619 180 464 270 559 C 340 624 400 489 440 554 L 440 609 C 300 544 200 679 90 594 L -20 639 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(76%,65%,45%); fill-rule: evenodd;"/>
+			<path d="M -20 560 C 80 650 180 495 270 590 C 340 655 400 520 440 585 L 440 640 C 300 575 200 710 90 625 L -20 670 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,32%,21%); fill-rule: evenodd;"/>
+			<path d="M -20 591 C 80 681 180 526 270 621 C 340 686 400 551 440 616 L 440 671 C 300 606 200 741 90 656 L -20 701 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(54%,41%,25%); fill-rule: evenodd;"/>
+			<path d="M -20 622 C 80 712 180 557 270 652 C 340 717 400 582 440 647 L 440 702 C 300 637 200 772 90 687 L -20 732 Z " style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(68%,53%,32%); fill-rule: evenodd;"/>
+			<rect x="84" y="105" width="252" height="384" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(33%,25%,17%); fill-rule: evenodd;"/>
+			<rect x="19" y="19" width="382" height="557" style="stroke: rgb(77%,63%,42%); stroke-linecap: butt; stroke-width: 0.75; fill: none; fill-rule: evenodd;"/>
+			<rect x="24" y="24" width="372" height="547" style="stroke: rgb(77%,63%,42%); stroke-linecap: butt; stroke-width: 0.3; fill: none; fill-rule: evenodd;"/>
+			<circle cx="25" cy="25" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,63%,42%); fill-rule: evenodd;"/>
+			<circle cx="25" cy="570" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,63%,42%); fill-rule: evenodd;"/>
+			<circle cx="395" cy="25" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,63%,42%); fill-rule: evenodd;"/>
+			<circle cx="395" cy="570" r="2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,63%,42%); fill-rule: evenodd;"/>
+			<path d="M 184,145 L 236,145 Z" style="stroke: rgb(77%,63%,42%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 198,475 L 222,475 Z" style="stroke: rgb(77%,63%,42%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 199.607695,469 L 220.392305,481 Z" style="stroke: rgb(77%,63%,42%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 204,464.607695 L 216,485.392305 Z" style="stroke: rgb(77%,63%,42%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 210,463 L 210,487 Z" style="stroke: rgb(77%,63%,42%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 216,464.607695 L 204,485.392305 Z" style="stroke: rgb(77%,63%,42%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<path d="M 220.392305,469 L 199.607695,481 Z" style="stroke: rgb(77%,63%,42%); stroke-linecap: butt; stroke-width: 0.8;"/>
+		</g>
+	</g>
+</svg>

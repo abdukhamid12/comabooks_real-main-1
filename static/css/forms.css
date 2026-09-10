@@ -1,0 +1,14 @@
+from django import forms
+from .models import Book, BookPage
+
+
+class BookForm(forms.ModelForm):
+    class Meta:
+        model = Book
+        fields = ["title", "subtitle", "author"]
+
+
+class BookPageForm(forms.ModelForm):
+    class Meta:
+        model = BookPage
+        fields = ["question", "answer"]
