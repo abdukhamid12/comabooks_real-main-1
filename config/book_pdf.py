@@ -22,7 +22,7 @@ from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen.canvas import Canvas
-from reportlab.platypus import BaseDocTemplate, Frame, PageTemplate, Paragraph, Spacer, PageBreak, Flowable, Image as FlowImage
+from reportlab.platypus import BaseDocTemplate, Frame, PageTemplate, Paragraph, Spacer, PageBreak, Flowable, KeepInFrame, Image as FlowImage
 from .cover_designs import COVER_STYLES, cover_art
 
 
@@ -184,6 +184,32 @@ def interior_pdf(book,spec,warnings=None):
                         spaceAfter=10,alignment=TA_LEFT,allowWidows=0,allowOrphans=0,splitLongWords=True)
     question=ParagraphStyle('question',parent=body,fontName='BookSerifBold',fontSize=19,leading=25,spaceAfter=20,keepWithNext=True)
     label=ParagraphStyle('label',fontName='BookSans',fontSize=7,leading=11,textColor=HexColor('#877052'),spaceAfter=15,keepWithNext=True)
+    class MemoryPage(Flowable):
+        """One indivisible page; preserve photo proportions and all answer text."""
+        def __init__(self, blocks, photo):
+            super().__init__()
+            self.width = content_w
+            self.height = content_h - 1
+            self.blocks = blocks
+            self.photo = photo
+
+        def draw(self):
+            gap = 12 if self.photo else 0
+            # Reserve a useful photo area before shrinking exceptionally long text.
+            reserved = min(self.height * .24, self.photo.drawHeight) if self.photo else 0
+            text = KeepInFrame(self.width, self.height - reserved - gap,
+                               self.blocks, mode='shrink', hAlign='LEFT', vAlign='TOP')
+            _, text_h = text.wrapOn(self.canv, self.width, self.height - reserved - gap)
+            text.drawOn(self.canv, 0, self.height - text_h)
+            if self.photo:
+                available = max(1, self.height - text_h - gap)
+                scale = min(1, available / self.photo.drawHeight)
+                photo_w = self.photo.drawWidth * scale
+                photo_h = self.photo.drawHeight * scale
+                self.photo.drawWidth = photo_w
+                self.photo.drawHeight = photo_h
+                self.photo.drawOn(self.canv, (self.width-photo_w)/2,
+                                  self.height-text_h-gap-photo_h)
     class FrontMatter(Flowable):
         def __init__(self, dedication=False):
             super().__init__()
@@ -210,14 +236,15 @@ def interior_pdf(book,spec,warnings=None):
         story.extend([Paragraph('История начинается здесь',question),Paragraph('В этой книге пока нет сохранённых ответов.',body)])
     for index,page in enumerate(pages,1):
         if index>1:story.append(PageBreak())
-        story.append(Paragraph(f'ВОСПОМИНАНИЕ {index:02d}',label))
-        story.append(Paragraph(safe_text(page.quiz),question))
+        blocks = [Paragraph(f'ВОСПОМИНАНИЕ {index:02d}',label),
+                  Paragraph(safe_text(page.quiz),question)]
         if page.answer:
             for paragraph in str(page.answer).replace('\r\n','\n').split('\n\n'):
-                if paragraph.strip():story.append(Paragraph(safe_text(paragraph),body))
+                if paragraph.strip():blocks.append(Paragraph(safe_text(paragraph),body))
+        photo = None
         if page.image:
             photo=image_flowable(page.image,content_w,content_h*.48,warnings,f'Воспоминание {index}')
-            if photo:story.extend([Spacer(1,10),photo])
+        story.append(MemoryPage(blocks, photo))
     doc.build(story)
     reader=PdfReader(result);writer=PdfWriter()
     for page in reader.pages:writer.add_page(page)
@@ -294,3 +321,4 @@ def generate_print_package(book):
         archive.writestr('READ-ME-print.txt',text.encode('utf-8-sig'))
         archive.writestr('print-spec.json',json.dumps({**spec.__dict__,'interior_pages':count,'warnings':warnings,'imposed':False,'color_space':'RGB'},ensure_ascii=False,indent=2))
     result.seek(0);return result
+

@@ -77,6 +77,22 @@ class BookPrintTests(TestCase):
         spread=PdfReader(io.BytesIO(package.read('04-cover-spread.pdf')))
         self.assertAlmostEqual(float(spread.pages[0].trimbox.width)/72*25.4,308,places=2)
 
+    def test_long_answers_and_photos_share_one_page(self):
+        with tempfile.TemporaryDirectory() as directory, override_settings(MEDIA_ROOT=directory):
+            for size in [(160, 1200), (1600, 200), (600, 600)]:
+                for words in [30, 250, 1000]:
+                    with self.subTest(size=size, words=words):
+                        data = io.BytesIO()
+                        Image.new('RGB', size, '#678577').save(data, 'PNG')
+                        self.page.image.save('fit.png', ContentFile(data.getvalue()))
+                        self.page.answer = 'Воспоминание ' * words + ' КОНЕЦТЕКСТА'
+                        self.page.save()
+                        pdf = PdfReader(interior_pdf(self.book, PrintSpec()))
+                        self.assertEqual(len(pdf.pages), 4)
+                        self.assertIn('КОНЕЦТЕКСТА', pdf.pages[2].extract_text())
+                        self.assertEqual(len(pdf.pages[2].images), 1)
+                        self.assertFalse(pdf.pages[3].extract_text().strip())
+
     def test_print_package_is_admin_only(self):
         admin_url = f'/admin/config/book/{self.book.pk}/print/'
         old_url = f'/book/{self.book.pk}/print/'
@@ -111,3 +127,4 @@ class BookPrintTests(TestCase):
         for options in [{'bleed_mm':-1},{'inner_mm':1},{'spine_mm':0},{'width_mm':float('nan')}]:
             with self.assertRaises(ValueError):
                 PrintSpec(**options)
+
