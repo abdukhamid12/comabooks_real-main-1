@@ -1,0 +1,31 @@
+{% extends '_base.html' %}{% load static %}
+{% block title %}{{ book.title }} — Мастерская книги{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/studio.css' %}">{% endblock %}
+{% block content %}
+<section class="studio container">
+ <header class="studio-heading"><div><a href="{% url 'dashboard' %}">← Мои книги</a><p class="eyebrow">МАСТЕРСКАЯ ИСТОРИЙ</p><h1>{{ book.title }}</h1></div><a class="btn btn-secondary" id="review-link" href="{% url 'book_review' book.pk %}">Просмотреть книгу →</a><a href="{% url 'book_history' book.pk %}">История текста</a></header>
+ <div class="studio-progress"><label for="completion" id="progress-label">Готово 0 страниц</label><progress id="completion" value="0" max="1"></progress><span id="save-status" role="status" aria-live="polite">Загрузка…</span></div>
+ {% if book.status != 'draft' %}<div class="studio-notice">Макет подтверждён. Чтобы внести изменения, откройте просмотр книги и нажмите «Вернуться к редактированию».</div>{% endif %}
+ <div class="studio-layout">
+ <aside class="chapters"><details open><summary>Главы и порядок страниц</summary><ol id="chapters"></ol></details><button class="btn btn-secondary" id="add-chapter">+ Своя глава</button></aside>
+ <section class="writing"><form id="writer" enctype="multipart/form-data">{% csrf_token %}
+ <fieldset id="editable"><legend id="chapter-title">Ваша история</legend>
+ <label for="answer">Ваш текст</label><textarea id="answer" rows="12" placeholder="Начните с небольшой детали, которую хочется сохранить…"></textarea>
+ <div class="word-line"><span id="words">0 / 250 слов</span><button type="button" id="save-now">Сохранить сейчас</button></div>
+ <div class="writing-tools"><button type="button" data-help="start">Помоги начать</button><button type="button" data-help="question">Уточняющий вопрос</button><button type="button" data-help="correct">Исправь ошибки</button></div>
+ <p class="studio-hint">Подсказки не меняют текст без вашего согласия. При исправлении ошибок текст отправляется подключённому ИИ.</p>
+ <section class="photo-tools"><h2>Фотография</h2><label for="photo">Добавить или заменить · до 15 МБ</label><input id="photo" type="file" accept="image/jpeg,image/png,image/webp">
+ <img id="photo-small" alt="Выбранная фотография" hidden><p id="photo-warning" role="status"></p>
+ <div class="photo-controls"><button type="button" id="rotate">↻ Повернуть</button><button type="button" id="remove-photo">Убрать фото</button><label>Размещение<select id="image-fit"><option value="contain">Показать целиком</option><option value="cover">Заполнить область</option></select></label></div>
+ <div id="crop-controls" hidden><label for="focus-x">Кадр по горизонтали</label><input type="range" id="focus-x" min="0" max="1" step=".01" value=".5"><label for="focus-y">Кадр по вертикали</label><input type="range" id="focus-y" min="0" max="1" step=".01" value=".5"></div>
+ <p class="studio-hint">Оригинал сохраняется. Итоговый кадр виден в предпросмотре.</p></section>
+ </fieldset></form>
+ <nav class="page-actions"><button id="previous" class="btn btn-secondary">← Назад</button><button id="next" class="btn btn-primary">Сохранить и дальше →</button></nav><p class="studio-hint">Можно оставить главу пустой и вернуться к ней позже.</p>
+ </section>
+ <aside class="live-preview"><div class="preview-heading"><h2>Так будет в книге</h2><span id="preview-status" role="status"></span></div><img id="page-preview" alt="Предпросмотр страницы PDF" hidden><p id="preview-empty">Напишите текст — здесь появится ваша страница с фотографией.</p><p class="studio-hint">Предпросмотр обновляется после сохранения. Изображение адаптируется к длине текста.</p></aside>
+ </div>
+</section>
+<dialog id="helper"><h2 id="helper-title">Помощник</h2><label for="suggestion">Предложенный вариант</label><textarea id="suggestion" rows="9"></textarea><p id="helper-error" role="status"></p><div class="page-actions"><button id="dismiss-help">Закрыть</button><button id="apply-help">Применить</button></div></dialog>
+<dialog id="new-chapter"><h2>Новая глава</h2><label for="new-title">Название</label><input id="new-title" maxlength="255"><p id="new-error" role="status"></p><div class="page-actions"><button id="cancel-add">Отмена</button><button id="confirm-add">Добавить</button></div></dialog>
+{{ studio_data|json_script:'studio-data' }}<script src="{% static 'js/studio.js' %}" defer></script>
+{% endblock %}

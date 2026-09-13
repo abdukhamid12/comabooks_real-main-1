@@ -19,7 +19,14 @@ class BookAdmin(admin.ModelAdmin):
     list_filter = ['status']
     search_fields = ['title', 'author', 'user__username']
     list_per_page = 25
-    readonly_fields = ['print_files']
+    readonly_fields = ['print_files', 'approved_at', 'revision']
+
+    def save_model(self, request, obj, form, change):
+        if obj.status in ['printing', 'printed', 'shipped'] and not obj.approved_at:
+            from django.contrib import messages
+            messages.warning(request, 'Сначала клиент должен подтвердить макет. Книга оставлена на проверке.')
+            obj.status = 'completed'
+        super().save_model(request, obj, form, change)
 
     @admin.display(description='Файлы для типографии')
     def print_files(self, obj):

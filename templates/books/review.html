@@ -1,0 +1,20 @@
+{% extends '_base.html' %}{% load static %}
+{% block title %}Просмотр и заказ — {{ book.title }}{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/studio.css' %}">{% endblock %}
+{% block content %}<section class="container studio" id="review" data-preview="{% url 'book_preview' book.pk %}" data-revision="{{ book.revision }}">
+<div class="studio-heading"><div><a href="{% url 'dashboard' %}">← Мои книги</a><p class="eyebrow">ПОСЛЕДНИЙ ВЗГЛЯД ПЕРЕД ПЕЧАТЬЮ</p><h1>{{ book.title }}</h1><p>Заполнено {{ done }} из {{ total }} глав. Проверьте текст, кадры фотографий и порядок страниц.</p></div><a class="btn btn-secondary" href="{% url 'generate_pdf' book.pk %}">Скачать PDF</a></div>
+<p class="review-message" id="review-error" role="status">Загружаем макет…</p>
+<div class="review-book" id="spreads"><img id="left-page" alt="Страница книги"><img id="right-page" alt="Следующая страница книги" hidden></div>
+<nav class="review-controls" aria-label="Перелистывание книги"><button class="btn btn-secondary" id="back-page">← Назад</button><span id="page-number" aria-live="polite"></span><button class="btn btn-secondary" id="forward-page">Далее →</button></nav>
+<p class="studio-hint" style="text-align:center">На телефоне листайте свайпом. Пустые технические страницы сохраняют правильные стороны разворотов.</p>
+<section class="approval"><h2>Ваш заказ: {{ book.get_status_display }}</h2>
+<ol class="order-timeline"><li {% if book.status == 'draft' %}class="current"{% endif %}>Редактирование</li><li {% if book.status == 'completed' %}class="current"{% endif %}>На проверке</li><li {% if book.status == 'printing' %}class="current"{% endif %}>В печати</li><li {% if book.status == 'printed' %}class="current"{% endif %}>Готова</li><li {% if book.status == 'shipped' %}class="current"{% endif %}>Отправлена</li></ol>
+{% if book.status == 'draft' %}<p>Незаполненные главы можно закончить в редакторе. Нажатие ниже подтверждает текущий макет для проверки администратором.</p><form method="post" action="{% url 'finish_book' book.pk %}">{% csrf_token %}<input type="hidden" name="revision" value="{{ book.revision }}"><label><input type="checkbox" name="confirm" value="yes" required>Я проверил(а) текст, фотографии и порядок страниц. Можно печатать после проверки администратором.</label><div class="page-actions"><a href="{% url 'edit_pages' book.pk %}">Продолжить редактирование</a><button class="btn btn-primary" {% if not done %}disabled{% endif %}>Можно печатать</button></div></form>
+{% elif book.status == 'completed' %}<p>Макет подтверждён. Следующий шаг — проверка администратором. Изменения потребуют повторного подтверждения.</p><form method="post" action="{% url 'book_reopen' book.pk %}">{% csrf_token %}<button class="btn btn-secondary">Вернуться к редактированию</button></form>
+{% elif book.status == 'printing' %}<p>Книга в производстве. Если потребуется помощь, напишите администратору.</p>
+{% elif book.status == 'printed' %}<p>Книга готова. Администратор согласует получение или отправку.</p>
+{% elif book.status == 'shipped' %}<p>Книга отправлена.</p>{% endif %}
+{% if book.tracking_url %}<a href="{{ book.tracking_url }}" target="_blank" rel="noopener noreferrer">Отследить доставку ↗</a>{% endif %}
+{% if events %}<details><summary>История заказа</summary>{% for event in events %}<p>{{ event.created_at|date:'d.m.Y H:i' }} · {{ event.get_status_display }}</p>{% endfor %}</details>{% endif %}
+<hr>{% if user.telegram_chat_id %}<p>Уведомления в Telegram подключены.</p>{% elif telegram_ready %}<button id="connect-telegram" class="btn btn-secondary" data-url="{% url 'telegram_connect' %}">Подключить уведомления Telegram</button><p id="telegram-message" role="status"></p>{% else %}<p class="studio-hint">Уведомления Telegram появятся после подключения бота администратором. Статус заказа уже доступен здесь.</p>{% endif %}
+</section></section><script src="{% static 'js/review.js' %}" defer></script>{% endblock %}

@@ -1,4 +1,3 @@
-
 """Book layouts: reader PDF and separate, sequential production files.
 
 No printer imposition or automatic spine estimate is performed.
@@ -129,11 +128,19 @@ def cover_pdf(book,spec,back=False,bleed=True):
     dest=io.BytesIO();writer.write(dest);dest.seek(0);return dest
 
 
-def image_flowable(field,width,height,warnings,label):
+def image_flowable(field,width,height,warnings,label,page=None):
     try:
         with field.open('rb') as source:
             with Image.open(source) as original:
                 image=ImageOps.exif_transpose(original).convert('RGBA')
+                if page:
+                    image=image.rotate(-getattr(page,'rotation',0),expand=True)
+                    if getattr(page,'image_fit','contain')=='cover':
+                        crop_w=min(image.width, int(image.height*1.5))
+                        crop_h=min(image.height, int(image.width/1.5))
+                        x=int((image.width-crop_w)*getattr(page,'focus_x',.5))
+                        y=int((image.height-crop_h)*getattr(page,'focus_y',.5))
+                        image=image.crop((x,y,x+crop_w,y+crop_h))
                 white=Image.new('RGBA',image.size,'white');white.alpha_composite(image)
                 image=white.convert('RGB')
                 scale=min(width/image.width,height/image.height)
@@ -231,7 +238,7 @@ def interior_pdf(book,spec,warnings=None):
                 fitted_text(c,book.author,0,height*.05,width,height*.12,size=12)
 
     story=[FrontMatter(),PageBreak(),FrontMatter(dedication=True),PageBreak()]
-    pages=list(book.pages.all().order_by('pk'))
+    pages=list(book.pages.all().order_by('position','pk'))
     if not pages:
         story.extend([Paragraph('История начинается здесь',question),Paragraph('В этой книге пока нет сохранённых ответов.',body)])
     for index,page in enumerate(pages,1):
@@ -243,7 +250,7 @@ def interior_pdf(book,spec,warnings=None):
                 if paragraph.strip():blocks.append(Paragraph(safe_text(paragraph),body))
         photo = None
         if page.image:
-            photo=image_flowable(page.image,content_w,content_h*.48,warnings,f'Воспоминание {index}')
+            photo=image_flowable(page.image,content_w,content_h*.48,warnings,f'Воспоминание {index}',page)
         story.append(MemoryPage(blocks, photo))
     doc.build(story)
     reader=PdfReader(result);writer=PdfWriter()
@@ -321,4 +328,3 @@ def generate_print_package(book):
         archive.writestr('READ-ME-print.txt',text.encode('utf-8-sig'))
         archive.writestr('print-spec.json',json.dumps({**spec.__dict__,'interior_pages':count,'warnings':warnings,'imposed':False,'color_space':'RGB'},ensure_ascii=False,indent=2))
     result.seek(0);return result
-

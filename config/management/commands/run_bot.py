@@ -64,6 +64,8 @@ class Command(BaseCommand):
 
         while True:
             try:
+                from config.notifications import deliver_status_events, connect_customer
+                deliver_status_events()
                 # 1. Auto-send completed books
                 unsent_books = Book.objects.filter(status='completed', is_notification_sent=False)
                 for b in unsent_books:
@@ -86,6 +88,10 @@ class Command(BaseCommand):
                         msg = update['message']
                         chat_id = msg.get('chat', {}).get('id')
                         text = msg.get('text', '').strip()
+                        if text.startswith('/start link_'):
+                            linked=connect_customer(chat_id,text,msg.get('chat',{}).get('type'))
+                            send_msg(chat_id,'Уведомления о ваших книгах подключены.' if linked else 'Ссылка истекла. Подключите Telegram снова из кабинета.')
+                            continue
 
                         self.stdout.write(f"Received msg from {chat_id}: {text}")
 
@@ -101,6 +107,9 @@ class Command(BaseCommand):
 
                         # Auth Check Commands
                         if text == '/start':
+                            if not state_info.get('is_auth'):
+                                send_msg(chat_id,'Для уведомлений подключите Telegram из кабинета сайта. Администраторам: /admin')
+                                continue
                             user_states[chat_id] = {'state': 'IDLE', 'data': {}, 'is_auth': False}
                             send_msg(chat_id, "👋 Привет! Вот список книг, ожидающих проверки:", hide_keyboard=True)
 

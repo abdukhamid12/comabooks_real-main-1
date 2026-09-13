@@ -4,9 +4,8 @@ django-jazzmin==3.0.1
 pillow==11.3.0
 sqlparse==0.5.3
 tzdata==2025.2
-
 reportlab~=4.4.4
 requests
 google-generativeai
-
 pypdf>=6.0,<7.0
+PyMuPDF>=1.26,<2

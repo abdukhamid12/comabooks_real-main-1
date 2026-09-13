@@ -1,0 +1,10 @@
+(() => {
+const root=document.getElementById('review'),base=root.dataset.preview,$=id=>document.getElementById(id);
+let index=0,count=0;const mobile=()=>matchMedia('(max-width:650px)').matches;
+function show(){const two=!mobile()&&index>0&&index+1<count;$('left-page').src=`${base}?page=${index}&v=${root.dataset.revision}`;$('right-page').hidden=!two;if(two)$('right-page').src=`${base}?page=${index+1}&v=${root.dataset.revision}`;$('page-number').textContent=`${index+1}${two?'–'+(index+2):''} / ${count}`;$('back-page').disabled=index===0;$('forward-page').disabled=index+(two?2:1)>=count;}
+function next(){if(!count)return;index=Math.min(count-1,index+(!mobile()&&index>0?2:1));show();}function previous(){if(!count)return;index=Math.max(0,index-(!mobile()&&index>1?2:1));show();}
+$('forward-page').disabled=true;$('back-page').disabled=true;$('forward-page').onclick=next;$('back-page').onclick=previous;let x=0;$('spreads').addEventListener('touchstart',e=>x=e.changedTouches[0].clientX,{passive:true});$('spreads').addEventListener('touchend',e=>{let delta=e.changedTouches[0].clientX-x;if(Math.abs(delta)>60)(delta<0?next:previous)();},{passive:true});window.addEventListener('resize',()=>{if(count)show();});
+fetch(base+'?info=1').then(r=>{if(!r.ok||r.redirected)throw Error();return r.json();}).then(d=>{count=d.pages;show();$('review-error').textContent='';}).catch(()=>$('review-error').textContent='Не удалось загрузить макет. Обновите страницу или скачайте PDF.');
+for(const id of ['left-page','right-page'])$(id).onerror=()=>$('review-error').textContent='Ошибка загрузки страницы. Проверьте соединение и обновите просмотр.';
+const link=$('connect-telegram');if(link)link.onclick=async()=>{try{const r=await fetch(link.dataset.url,{method:'POST',headers:{'X-CSRFToken':document.querySelector('[name=csrfmiddlewaretoken]').value}});const d=await r.json();if(!r.ok)throw Error(d.error);const a=document.createElement('a');a.href=d.url;a.textContent='Открыть бота и нажать «Запустить»';a.target='_blank';a.rel='noopener noreferrer';$('telegram-message').replaceChildren(a);}catch(e){$('telegram-message').textContent=e.message;}};
+})();

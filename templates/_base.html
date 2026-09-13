@@ -17,6 +17,7 @@
 <a class="brand" href="{% url 'home' %}">comabooks<span>✳</span></a>
 <div class="desktop-nav"><a href="{% url 'home' %}#how-it-works">Как это работает</a><a href="{% url 'home' %}#reviews">Отзывы</a><a href="{% url 'home' %}#faq">Вопросы</a></div>
 <div class="nav-account">{% if user.is_authenticated %}<a class="nav-library" href="{% url 'dashboard' %}">Мои книги</a><form action="{% url 'logout' %}" method="post">{% csrf_token %}<button class="nav-signout" type="submit">Выйти</button></form>{% else %}<a class="nav-library" href="{% url 'login' %}">Войти</a><a class="btn btn-primary nav-order" href="https://t.me/abdukhamid_ikramov" target="_blank" rel="noopener noreferrer">Заказать книгу ↗</a>{% endif %}</div>
+{% if user.is_staff %}<a class="nav-library" href="{% url 'management_home' %}">Админка ↗</a>{% endif %}
 </nav></header>
 <main id="main-content" class="flex-grow-1" tabindex="-1">{% if messages %}<div class="container pt-3" role="status">{% for message in messages %}<div class="alert alert-info">{{ message }}</div>{% endfor %}</div>{% endif %}{% block content %}{% endblock %}</main>
 <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="{% url 'home' %}">comabooks<span>✳</span></a><p>Для слов, которые хочется сохранить.</p><a href="https://t.me/abdukhamid_ikramov" target="_blank" rel="noopener noreferrer">Написать в Telegram ↗</a><small>© {% now "Y" %}</small></div></footer>

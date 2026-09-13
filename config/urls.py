@@ -1,14 +1,30 @@
 from django.urls import path
-from . import views
+from . import views, studio, management_portal as portal
 
 urlpatterns = [
+    path('book/<int:book_id>/history/', studio.history, name='book_history'),
+    path('book/<int:book_id>/history/<int:version_id>/restore/', studio.restore_text, name='restore_text'),
+    path('manage/', portal.home, name='management_home'),
+    path('manage/files/<int:pk>/<str:kind>/', portal.book_file, name='management_file'),
+    path('manage/<str:section>/', portal.listing, name='management_list'),
+    path('manage/<str:section>/add/', portal.edit, name='management_add'),
+    path('manage/<str:section>/<int:pk>/', portal.edit, name='management_edit'),
     path("", views.home, name="home"),
     path("dashboard/", views.dashboard, name="dashboard"),
     path("create/", views.create_book, name="create_book"),
-    path("book/<int:book_id>/edit/", views.edit_pages, name="edit_pages"),
+    path("book/<int:book_id>/edit/", studio.editor, name="edit_pages"),
     path("book/<int:book_id>/add_page/", views.add_page, name="add_page"),
     path("book/<int:book_id>/generate_pdf/", views.generate_pdf, name="generate_pdf"),
-    path("book/<int:book_id>/finish/", views.finish_book, name="finish_book"),
+    path("book/<int:book_id>/finish/", studio.approve, name="finish_book"),
+    path('book/<int:book_id>/studio/', studio.state, name='studio_state'),
+    path('book/<int:book_id>/studio/save/', studio.save, name='studio_save'),
+    path('book/<int:book_id>/studio/structure/', studio.structure, name='studio_structure'),
+    path('book/<int:book_id>/studio/assistant/', studio.assistant, name='studio_assistant'),
+    path('book/<int:book_id>/photo/<int:page_id>/', studio.photo, name='studio_photo'),
+    path('book/<int:book_id>/preview/', studio.preview, name='book_preview'),
+    path('book/<int:book_id>/review/', studio.review, name='book_review'),
+    path('book/<int:book_id>/reopen/', studio.reopen, name='book_reopen'),
+    path('telegram/connect/', studio.telegram_link, name='telegram_connect'),
     path("book/<int:book_id>/delete/", views.delete_book, name="delete_book"),
     path('ai/enhance-answer/', views.enhance_answer_ajax, name='enhance_answer_ajax'),
 ]

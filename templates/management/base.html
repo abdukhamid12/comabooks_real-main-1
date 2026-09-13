@@ -1,0 +1,4 @@
+{% extends '_base.html' %}{% load static %}
+{% block title %}Управление — Comabooks{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/management.css' %}">{% endblock %}
+{% block content %}<div class="container portal"><div class="portal-heading"><div><p class="portal-eyebrow">COMABOOKS / УПРАВЛЕНИЕ</p><h1>{% block heading %}Истории под вашим вниманием{% endblock %}</h1></div><span class="portal-badge">{{ user.username }} · Администратор</span></div><nav class="portal-nav" aria-label="Управление сайтом"><a href="{% url 'management_home' %}">Обзор</a>{% for item in sections %}<a {% if section == item.key %}aria-current="page"{% endif %} href="{% url 'management_list' item.key %}">{{ item.title }}</a>{% endfor %}</nav>{% block panel %}{% endblock %}</div>{% endblock %}

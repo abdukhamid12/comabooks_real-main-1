@@ -173,3 +173,5 @@ BOOK_PRINT = {
     "inner_mm": 22, "outer_mm": 16, "top_mm": 18, "bottom_mm": 20,
     "bleed_mm": 3, "spine_mm": None,
 }
+
+TELEGRAM_BOT_USERNAME = os.environ.get("TELEGRAM_BOT_USERNAME", "")

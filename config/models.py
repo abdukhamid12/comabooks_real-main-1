@@ -4,7 +4,9 @@ from django.conf import settings
 
 # 1. Пользователь
 class CustomUser(AbstractUser):
-    pass
+    telegram_chat_id = models.CharField(max_length=32, blank=True)
+    telegram_link_token = models.CharField(max_length=64, blank=True)
+    telegram_link_expires = models.DateTimeField(null=True, blank=True)
 
 # 2. Посвящение
 class BookDedication(models.Model):
@@ -26,6 +28,7 @@ class BookPageQuestion(models.Model):
     dedication = models.ForeignKey(BookDedication, on_delete=models.CASCADE, related_name="questions", null=True, blank=True, verbose_name="Для кого (посвящение)")
     book = models.ForeignKey('Book', on_delete=models.CASCADE, related_name="custom_questions", null=True, blank=True, verbose_name="Для книги")
     quiz = models.CharField(max_length=255, verbose_name="Вопрос")
+    position = models.PositiveIntegerField(default=0)
 
     def __str__(self):
         return f"{self.quiz} ({self.dedication.name if self.dedication else 'Общий'})"
@@ -36,6 +39,8 @@ class Book(models.Model):
         ('draft', 'Черновик'),
         ('completed', 'Завершено (Ждет проверки)'),
         ('printed', 'Напечатано'),
+        ('printing', 'В печати'),
+        ('shipped', 'Отправлена'),
     ]
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="books")
@@ -46,6 +51,11 @@ class Book(models.Model):
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='draft', verbose_name="Статус")
     is_notification_sent = models.BooleanField(default=False, verbose_name="Уведомление отправлено")
     created_at = models.DateTimeField(auto_now_add=True)
+    revision = models.PositiveIntegerField(default=0)
+    approved_at = models.DateTimeField(null=True, blank=True, verbose_name='Клиент подтвердил макет')
+    internal_notes = models.TextField(blank=True, verbose_name='Внутренние заметки')
+    due_date = models.DateField(null=True, blank=True, verbose_name='Срок готовности')
+    tracking_url = models.URLField(blank=True, verbose_name='Ссылка отслеживания')
 
     def __str__(self):
         return f"{self.title} ({self.user.username})"
@@ -57,6 +67,11 @@ class BookPageAnswer(models.Model):
     quiz = models.CharField(max_length=255, verbose_name="Вопрос")
     answer = models.TextField(verbose_name="Ответ")
     image = models.ImageField(upload_to="book_images/", blank=True, null=True, verbose_name="Фотография")
+    position = models.PositiveIntegerField(default=0)
+    rotation = models.PositiveIntegerField(default=0, choices=[(0,'0°'),(90,'90°'),(180,'180°'),(270,'270°')])
+    image_fit = models.CharField(max_length=10, default='contain', choices=[('contain','Целиком'),('cover','Заполнить')])
+    focus_x = models.FloatField(default=.5)
+    focus_y = models.FloatField(default=.5)
 
     def __str__(self):
         return f"{self.quiz[:20]} - {self.answer[:20]}"
@@ -103,3 +118,23 @@ class AISettings(models.Model):
         if not self.pk and AISettings.objects.exists():
             return
         return super(AISettings, self).save(*args, **kwargs)
+
+
+class BookStatusEvent(models.Model):
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='status_events')
+    status = models.CharField(max_length=20, choices=Book.STATUS_CHOICES)
+    created_at = models.DateTimeField(auto_now_add=True)
+    telegram_sent = models.BooleanField(default=False)
+    delivery_error = models.CharField(max_length=255, blank=True)
+
+    class Meta:
+        ordering = ['created_at', 'pk']
+
+
+class PageVersion(models.Model):
+    page = models.ForeignKey(BookPageAnswer, on_delete=models.CASCADE, related_name='versions')
+    text = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_at', '-pk']
