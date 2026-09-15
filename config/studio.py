@@ -23,15 +23,28 @@ def owner(request, book_id):
 
 
 def chapters(book):
-    # Copy a catalogue once, so rearranging one book never changes another.
+    # Generate outside the database transaction; keep existing book chapters intact.
+    titles = []
+    if not book.custom_questions.exists():
+        source = BookPageQuestion.objects.filter(book=None, dedication=book.dedication).order_by('position', 'pk') if book.dedication_id else BookPageQuestion.objects.none()
+        titles = list(source.values_list('quiz', flat=True))
+        if not titles and book.dedication_id and book.status == 'draft':
+            ai = AISettings.objects.first()
+            if ai and ai.is_ai_enabled and ai.gemini_api_key:
+                from .utils import generate_questions_ai
+                generated = generate_questions_ai(book.dedication.name, book.dedication.text,
+                    count=max(1, min(ai.ai_question_count, 100)), api_key=ai.gemini_api_key)
+                if isinstance(generated, list):
+                    titles = list(dict.fromkeys(q.strip() for q in generated
+                        if isinstance(q, str) and q.strip() and len(q.strip()) <= 255))[:max(1, min(ai.ai_question_count, 100))]
+        if not titles:
+            titles = list(BookPageQuestion.objects.filter(book=None, dedication=None).order_by('position','pk').values_list('quiz', flat=True))
+        if not titles:
+            titles = ['Как началась ваша история?', 'Ваш самый тёплый день', 'Что хочется сказать?']
     with transaction.atomic():
         Book.objects.select_for_update().get(pk=book.pk)
+        # Another request may have created chapters while the AI was responding.
         if not book.custom_questions.exists():
-            source = BookPageQuestion.objects.filter(book=None, dedication=book.dedication)
-            if not source.exists():
-                source = BookPageQuestion.objects.filter(book=None, dedication=None)
-            titles = list(source.values_list('quiz', flat=True)) or ['Как началась ваша история?', 'Ваш самый тёплый день', 'Что хочется сказать?']
-            # Preserve existing answers even if the catalogue has since changed.
             titles = list(dict.fromkeys(titles + list(book.pages.values_list('quiz', flat=True))))
             for i, title in enumerate(titles):
                 BookPageQuestion.objects.create(book=book, quiz=title, position=i)

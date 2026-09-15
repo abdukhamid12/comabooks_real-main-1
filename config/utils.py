@@ -97,7 +97,7 @@ def generate_questions_ai(dedication_name, dedication_text, count=5, api_key=Non
             f"Пример: [\"Вопрос 1\", \"Вопрос 2\"]"
         )
 
-        response = model.generate_content(prompt)
+        response = model.generate_content(prompt, request_options={"timeout": 25})
         text = response.text.strip()
 
         # Clean potential markdown code blocks
@@ -109,21 +109,8 @@ def generate_questions_ai(dedication_name, dedication_text, count=5, api_key=Non
 
         questions = json.loads(text)
         return questions
-    except Exception as e:
-        print(f"Error generating questions with AI: {e}")
-        # Try fallback models if primary fails
-        if "404" in str(e) or "429" in str(e):
-            for model_name in ['gemini-pro-latest', 'gemini-2.0-flash']:
-                try:
-                    print(f"DEBUG: Trying fallback model: {model_name}")
-                    model = genai.GenerativeModel(model_name)
-                    response = model.generate_content(prompt)
-                    text = response.text.strip()
-                    if text.startswith("```json"): text = text[7:]
-                    if text.endswith("```"): text = text[:-3]
-                    return json.loads(text.strip())
-                except:
-                    pass
+    except Exception:
+        # Do not log provider exceptions: they can include request credentials.
         return []
 
 
